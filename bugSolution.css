@@ -1,0 +1,19 @@
+/* bugSolution.css */
+
+.my-element {
+  @apply text-red-500; /*Or use a more specific class that overrides the general class*/
+  @apply bg-blue-500; 
+}
+
+/*Alternative Solution with more specific selectors*/
+.my-red-text {
+  @apply text-red-500;
+}
+.my-blue-background {
+  @apply bg-blue-500;
+}
+.another-element {
+  @apply my-red-text my-blue-background;
+}
+
+/* The order of the @apply directives can be carefully managed to control the final styling */
